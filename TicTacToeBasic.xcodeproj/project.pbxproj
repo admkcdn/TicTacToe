@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A720E5E2C01D8B3001C2C89 /* smile.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A720E5D2C01D8B3001C2C89 /* smile.mp3 */; };
+		1A720E602C01D8F5001C2C89 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A720E5F2C01D8F5001C2C89 /* AudioPlayer.swift */; };
 		1AB7F2662BB2FA9F00021BC6 /* TicTacToeBasicApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7F2652BB2FA9F00021BC6 /* TicTacToeBasicApp.swift */; };
 		1AB7F2682BB2FA9F00021BC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB7F2672BB2FA9F00021BC6 /* ContentView.swift */; };
 		1AB7F26A2BB2FAA000021BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AB7F2692BB2FAA000021BC6 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A720E5D2C01D8B3001C2C89 /* smile.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = smile.mp3; sourceTree = "<group>"; };
+		1A720E5F2C01D8F5001C2C89 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		1AB7F2622BB2FA9F00021BC6 /* TicTacToeBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicTacToeBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AB7F2652BB2FA9F00021BC6 /* TicTacToeBasicApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeBasicApp.swift; sourceTree = "<group>"; };
 		1AB7F2672BB2FA9F00021BC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,8 +57,10 @@
 			children = (
 				1AB7F2652BB2FA9F00021BC6 /* TicTacToeBasicApp.swift */,
 				1AB7F2672BB2FA9F00021BC6 /* ContentView.swift */,
+				1A720E5F2C01D8F5001C2C89 /* AudioPlayer.swift */,
 				1AB7F2692BB2FAA000021BC6 /* Assets.xcassets */,
 				1AB7F26B2BB2FAA000021BC6 /* Preview Content */,
+				1A720E5D2C01D8B3001C2C89 /* smile.mp3 */,
 			);
 			path = TicTacToeBasic;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AB7F26D2BB2FAA000021BC6 /* Preview Assets.xcassets in Resources */,
+				1A720E5E2C01D8B3001C2C89 /* smile.mp3 in Resources */,
 				1AB7F26A2BB2FAA000021BC6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +146,7 @@
 			files = (
 				1AB7F2682BB2FA9F00021BC6 /* ContentView.swift in Sources */,
 				1AB7F2662BB2FA9F00021BC6 /* TicTacToeBasicApp.swift in Sources */,
+				1A720E602C01D8F5001C2C89 /* AudioPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,7 +295,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ademKocdogan.TicTacToeBasic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademkocdogan.tictactoebasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,7 +326,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ademKocdogan.TicTacToeBasic;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ademkocdogan.tictactoebasic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
