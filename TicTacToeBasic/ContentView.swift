@@ -20,7 +20,6 @@ struct ContentView: View {
     @StateObject var audioPlayer = AudioPlayer()
     
     var body: some View {
-        
         VStack{
             Spacer()
             Text("Tic Tac Toe")
@@ -37,14 +36,13 @@ struct ContentView: View {
                             check()
                             
                             DispatchQueue.main.asyncAfter(deadline: .now() + Double.random(in: 1..<6)){
-                                print("selamlar sonrasında geldim ben")
                             
                                 ContentView.AIMove(matrix: &game, player: queue ? "❌":"⭕️")
                                 queue.toggle()
                                 check()
                             }
-//                            queue.toggle()
-//                            ContentView.AIMove(matrix: &game, player: queue ? "❌":"⭕️")
+                            //                            queue.toggle()
+                            //                            ContentView.AIMove(matrix: &game, player: queue ? "❌":"⭕️")
                             
                         }){
                             ZStack{
@@ -75,8 +73,6 @@ struct ContentView: View {
     
     func check() {
        
-        
-        
         for i in 0..<3{
             if game[i][0] != "" && game[i][0] == game[i][1] && game[i][0] == game[i][2]{
                 //                 Win
@@ -109,10 +105,6 @@ struct ContentView: View {
     
     private static func AIMove(matrix: inout [[String]], player: String){
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0){
-            print("selamlar sonrasında geldim ben")
-        }
-        
         var winRow: Int = 0
         var winCol: Int = 0
         var blockRow: Int = 0
@@ -123,7 +115,7 @@ struct ContentView: View {
             return
         }
         
-        if (TryWinOrBlock(matrix: matrix,player: (player == "X" ? "O" : "X"), targetRow: &blockRow, targetCol: &blockCol))
+        if (TryWinOrBlock(matrix: matrix,player: (player == "❌" ? "⭕️" : "❌"), targetRow: &blockRow, targetCol: &blockCol))
         {
             matrix[blockRow][blockCol] = player
             return
